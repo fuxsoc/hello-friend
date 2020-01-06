@@ -1,0 +1,21 @@
+usage: trace_ip_location.py [-h] --ip_addresses IP_ADDRESSES [--plot PLOT]
+                            --ip_stack_key IP_STACK_KEY
+                            [--ip_rotate IP_ROTATE]
+
+Trace Location of IP address, and plot on relief map
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --ip_addresses IP_ADDRESSES
+                        server names or ip addresses of host servers
+  --plot PLOT           choose to plot location of ip address trace (default:
+                        False) Note: requires Basemap to be installed: sudo
+                        apt install python3-mpltoolkits.basemap
+  --ip_stack_key IP_STACK_KEY
+                        the file containing the api key for your ip stack
+                        account
+  --ip_rotate IP_ROTATE
+                        Decide whether you want to use free proxies (default:
+                        False). Note: if False, you must provide your own
+                        proxies through a third party source (noord vpn, or
+                        tor etc.)
